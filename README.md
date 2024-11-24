@@ -1,16 +1,7 @@
 # quicktask
 
-A new Flutter project.
+Cross platform application - Assignment 1.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+QuickTask is a task management application designed to help users quickly create, view, and manage their tasks. With features such as setting due dates, marking tasks as completed, and syncing tasks with a backend, QuickTask provides an efficient solution for everyday task management.
