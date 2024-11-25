@@ -34,7 +34,7 @@ class TaskCard extends StatelessWidget {
                   // Title Text Styling
                   Text(
                     'Title: ${task.title ?? 'No Title'}',
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.white, // White text color for contrast

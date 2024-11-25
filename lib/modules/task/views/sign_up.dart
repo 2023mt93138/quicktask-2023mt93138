@@ -3,6 +3,8 @@ import 'package:parse_server_sdk_flutter/parse_server_sdk_flutter.dart';
 import 'login_screen.dart'; // Import login screen for navigation after sign-up
 
 class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
+
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
 }
@@ -21,7 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
     // Basic validation (you can improve this as needed)
     if (email.isEmpty || username.isEmpty || password.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Please fill all the fields')));
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Please fill all the fields')));
       return;
     }
 
@@ -38,7 +40,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
       if (response.success) {
         // Navigate to the LoginScreen after successful sign-up
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sign-up successful!')));
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Sign-up successful!')));
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => LoginScreen()), // Navigate to LoginScreen after sign-up
@@ -61,50 +63,50 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sign Up'),
+        title: const Text('Sign Up'),
         centerTitle: true,
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             TextField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Email',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               controller: _usernameController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Username',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
               obscureText: true,  // To hide password input
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Password',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             _isLoading
-                ? CircularProgressIndicator()  // Show loading indicator while signing up
+                ? const CircularProgressIndicator()  // Show loading indicator while signing up
                 : ElevatedButton(
                     onPressed: signUp,
-                    child: Text('Sign Up'),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(double.infinity, 50),
+                      minimumSize: const Size(double.infinity, 50),
                     ),
+                    child: Text('Sign Up'),
                   ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextButton(
               onPressed: () {
                 // Navigate to LoginScreen if the user already has an account
@@ -113,7 +115,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   MaterialPageRoute(builder: (context) => LoginScreen()),
                 );
               },
-              child: Text('Already have an account? Log in'),
+              child: const Text('Already have an account? Log in'),
             ),
           ],
         ),

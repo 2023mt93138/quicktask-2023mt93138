@@ -18,12 +18,10 @@ abstract class CustomTheme {
     error: Color(0xFFB00020),  // Subtle red
     errorContainer: Color(0xFFFFDAD6),  // Soft pink background for error
     onError: Color(0xFFFFFFFF),  // White
-    onErrorContainer: Color(0xFF370000),  // Dark red for error messages
-    background: Color(0xFFF7F7F7),  // Light off-white background
-    onBackground: Color(0xFF2A2A2A),  // Dark gray for text
+    onErrorContainer: Color(0xFF370000),  // Dark gray for text
     surface: Color(0xFFF7F7F7),  // Light off-white surface
     onSurface: Color(0xFF2A2A2A),  // Dark gray for text
-    surfaceVariant: Color(0xFFDEE2E6),  // Light pastel gray surface
+    surfaceContainerHighest: Color(0xFFDEE2E6),  // Light pastel gray surface
     onSurfaceVariant: Color(0xFF4A4A4A),  // Dark gray for text
     outline: Color(0xFFB3B3B3),  // Light gray outline for borders
     onInverseSurface: Color(0xFFFBFBFB),  // White text for inverse surfaces
@@ -52,12 +50,10 @@ abstract class CustomTheme {
     error: Color(0xFFB00020),  // Subtle red for errors
     errorContainer: Color(0xFF370000),  // Dark red background for error
     onError: Color(0xFFFFFFFF),  // White text on error
-    onErrorContainer: Color(0xFF370000),  // Dark red for error messages
-    background: Color(0xFF121212),  // Darker background for dark mode
-    onBackground: Color(0xFFE0E0E0),  // Light gray text for dark mode
+    onErrorContainer: Color(0xFF370000),  // Light gray text for dark mode
     surface: Color(0xFF121212),  // Darker surface for dark mode
     onSurface: Color(0xFFE0E0E0),  // Light gray text on surfaces
-    surfaceVariant: Color(0xFF3C4349),  // Darker gray surface variant
+    surfaceContainerHighest: Color(0xFF3C4349),  // Darker gray surface variant
     onSurfaceVariant: Color(0xFFB3B3B3),  // Lighter gray for surface variant text
     outline: Color(0xFF8A8A8A),  // Soft gray outline
     onInverseSurface: Color(0xFF121212),  // Darker background for inverse surface

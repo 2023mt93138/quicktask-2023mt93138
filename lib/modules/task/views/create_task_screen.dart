@@ -87,11 +87,11 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
             const SizedBox(height: 24),
             ElevatedButton(
               onPressed: _submitTask,
-              child: const Text('Create Task'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 textStyle: const TextStyle(fontSize: 18),
               ),
+              child: const Text('Create Task'),
             ),
           ],
         ),
